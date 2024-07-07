@@ -18,6 +18,8 @@ repo_url: https://github.com/zoyter/eios-docs
 theme:
   name: readthedocs
   locale: ru
+  features:
+    - content.tooltips
 #  highlightjs: true
 #  hljs_languages:
 #    - bash
@@ -51,21 +53,28 @@ extra_css:
 markdown_extensions:
 #    - toc:
 #        permalink: 
-#    - admonition
-#    - attr_list
-#    - def_list
-#    - mdx_gh_links:
-#        user: mkdocs
-#        repo: mkdocs
-#    - pymdownx.arithmatex:
-#        generic: true
-#    - pymdownx.betterem
-#    - pymdownx.caret
-#    - pymdownx.mark
-#    - pymdownx.tilde
-#    - pymdownx.critic
-#    - pymdownx.details
+    - admonition
+    - attr_list
+    - def_list
+    - mdx_gh_links:
+        user: mkdocs
+        repo: mkdocs
+    - pymdownx.arithmatex:
+        generic: true
+    - abbr
+    - attr_list
+    - pymdownx.snippets
+    - pymdownx.emoji
+    - pymdownx.betterem
+    - pymdownx.caret
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.critic
+    - pymdownx.details
     - pymdownx.keys #++ctrl+alt+delete++
+    - pymdownx.tasklist:
+        custom_checkbox: false
+#        clickable_checkbox: true
 #    - pymdownx.superfences:
 #        custom_fences:
 #          - name: mermaid
