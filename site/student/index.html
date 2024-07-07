@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Oleg Lyash, Asya Lyash" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Обучающемуся - Работа в ЭИОС</title>
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../css/extra.css" rel="stylesheet"/>
+<script>
+        // Current page data
+        var mkdocs_page_name = "\u041e\u0431\u0443\u0447\u0430\u044e\u0449\u0435\u043c\u0443\u0441\u044f";
+        var mkdocs_page_input_path = "student.md";
+        var mkdocs_page_url = null;
+      </script>
+<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Работа в ЭИОС
+        </a><div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input aria-label="Поиск в документации" name="q" placeholder="Поиск в документации" title="Введите поисковый запрос" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="Навигационное меню" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Главная</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="#">Обучающемуся</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#1">1. Учётные записи обучающихся</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#11-1-">1.1 Получение учётной записи обучающимся 1-го курса:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#12">1.2 Повторная выдача сведений об учётной записи:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#13">1.3 Смена пароля:</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#2">2. Доступ к курсу</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#3">3. Смена группы</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teacher/">Преподавателю</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teacher-svr/">Специалисту по СВР</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../student_dep/">Специалисту студ.офиса</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teacher-curator/">Куратору</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="Мобильная версия навигации" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Работа в ЭИОС</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a aria-label="Документация" class="icon icon-home" href=".."></a></li>
+<li class="breadcrumb-item active">Обучающемуся</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/zoyter/eios-docs/edit/master/docs/student.md"> Редактировать в GitHub</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div class="section" itemprop="articleBody">
+<h1 id="_1">Обучающемуся</h1>
+<h2 id="1">1. Учётные записи обучающихся</h2>
+<h3 id="11-1-">1.1 Получение учётной записи обучающимся 1-го курса:</h3>
+<div class="mermaid">flowchart LR
+    dep_it("`**Управление ИТ**
+      создание учётных записей
+      (логин и пароль)`")
+
+    dep_stof("`**Студенческий офис**
+    передача в деканаты/директораты
+    институтов/факультетов`")
+
+    dep_dean("`**Деканат/директорат**
+    назначение кураторов и
+    передача им сведений об учётных записях`")
+
+    dep_next("...")
+
+    dep_it--&gt;dep_stof
+    dep_stof--&gt;dep_dean
+    dep_dean--&gt;dep_next
+</div>
+<div class="mermaid">flowchart LR   
+    dep_next("...")
+
+    dep_curator("`**Куратор**
+    идентификация обучающегося,
+    передача сведений об учётной записи`")
+
+    dep_student("`**Обучающийся**
+    получение логина и пароля`")    
+
+
+    dep_next--&gt;dep_curator
+    dep_curator--&gt;dep_student    
+</div>
+<ol>
+<li>Подразделение университета ответственное за ведение реестра учётных записей обучающихся создаёт их и передаёт в <strong>студенческий офис</strong>.</li>
+<li><strong>Студенческий офис</strong> передаёт полученные сведения об учётных записях <strong>деканам/директорам</strong> факультетов/институтов, которые уже передают списки <strong>кураторам</strong> академических групп.</li>
+<li><strong>Кураторы</strong> академических групп проводят идентификацию обучающихся (по документу, подтверждающему личность) и передают <strong>персонально</strong> каждому студенту своей группы сведения об учётной записи.</li>
+<li>Обучающийся получает от куратора сведения о своей учётной записи и уже персонально отвечает за их сохранность.</li>
+</ol>
+<h3 id="12">1.2 Повторная выдача сведений об учётной записи:</h3>
+<div class="mermaid">flowchart LR
+    dep_student("`**Обучающийся**
+    Запрос`") 
+
+    dep_stof("`**Студенческий офис**
+    идентификация обучающегося`")
+
+    dep_student2("`**Обучающийся**
+    получение пароля`")    
+
+    dep_student--&gt;dep_stof
+    dep_stof--&gt;dep_student2
+</div>
+<ol>
+<li>В случае потери сведений об учётной записи (логин, пароль) обучающемуся необходимо лично обратиться в <strong>студенческий офис</strong>.</li>
+<li><strong>Студенческий офис</strong> проводит идентификацию обучающегося (по документу, подтверждающему личность).</li>
+<li>После идентификации обучающегося <strong>студенческий офис</strong> повторно выдаёт сведения об учётной записи.</li>
+</ol>
+<h3 id="13">1.3 Смена пароля:</h3>
+<p><em>Вариант 1 (с помощью куратора)</em> </p>
+<div class="mermaid">flowchart LR
+    dep_student("`**Обучающийся**
+    Личное обращение к куратору`") 
+
+    dep_curator("`**Куратор**
+    идентификация обучающиегося,
+    запрос на адрес ЭИОС с
+    передачей данных обучающегося
+    (Фамилия Имя Отчество, email, моб.телефон)`")
+
+    dep_it("`**ЭИОС**
+      смена пароля, отправка
+      обучающемуся на электронную почту
+      нового пароля`")
+
+    dep_student2("`**Обучающийся**
+    Получение и использование
+    нового пароля`")     
+
+    dep_student--&gt;dep_curator
+    dep_curator--&gt;dep_it
+    dep_it--&gt;dep_student2
+</div>
+<ol>
+<li>В случае необходимости смены пароля обучающемуся необходимо лично обратиться к своему <strong>куратору</strong>.</li>
+<li><strong>Куратор</strong> проводит идентификацию обучающегося (по документу, подтверждающему личность).</li>
+<li>После идентификации обучающегося <strong>куратор</strong> отправляет запрос на смену пароля на адрес <tooltip term="lms">СУО</tooltip> ЭИОС университета (%eios-email%) с передачей ФИО обучающегося, номера телефона и его личной электронной почты.</li>
+<li>Подразделение университета, отвечающее за работу <tooltip term="lms">СУО</tooltip> ЭИОС устанавливает новый пароль и отправляет сведения об учётной записи на личную электронную почту обучающегося.</li>
+</ol>
+<p><em>Вариант 2 (с помощью специалиста студ.офиса)</em></p>
+<div class="mermaid">flowchart LR
+    dep_student("`**Обучающийся**
+    Личное обращение`") 
+
+    dep_stof("`**Студенческий офис**
+    идентификация обучающегося,
+    запрос на адрес ЭИОС с передачей данных обучающегося`")
+
+    dep_it("`**ЭИОС**
+      смена пароля, отправка
+      обучающемуся на электронную почту
+      нового пароля`")    
+
+    dep_student2("`**Обучающийся**
+    получение нового пароля`")    
+
+    dep_student--&gt;dep_stof
+    dep_stof--&gt;dep_it
+    dep_it--&gt;dep_student2
+</div>
+<ol>
+<li>В случае необходимости смены пароля обучающемуся необходимо лично обратиться в <strong>студенческий офис</strong>.</li>
+<li><strong>Студенческий офис</strong> проводит идентификацию обучающегося (по документу, подтверждающему личность).</li>
+<li>После идентификации обучающегося <strong>студенческий офис</strong> отправляет запрос на адрес <tooltip term="lms">СУО</tooltip> ЭИОС университета (%eios-email%) с передачей ФИО обучающегося, номера телефона и его личной электронной почты.</li>
+<li>Подразделение университета, отвечающее за работу <tooltip term="lms">СУО</tooltip> ЭИОС устанавливает новый пароль и отправляет сведения об учётной записи на личную электронную почту обучающегося.</li>
+</ol>
+<h2 id="2">2. Доступ к курсу</h2>
+<div class="mermaid">flowchart LR
+    dep_student("`**Обучающийся**
+    личное обращение`") 
+
+    dep_teacher("`**Преподаватель**
+    запись на курс, уведомление обучающегося`") 
+
+    dep_student2("`**Обучающийся**
+    работа на курсе`")    
+
+    dep_student--&gt;dep_teacher
+    dep_teacher--&gt;dep_student2
+</div>
+<ol>
+<li>Обратиться к преподавателю с просьбой о доступе к курсу.</li>
+<li>Преподаватель подключает обучающихся одним из способов, который указан в <a href="../teacher/">инструкциях для преподавателя</a>.</li>
+<li>Обучающемуся необходимо дождаться завершения процедуры организации доступа к курсу.</li>
+</ol>
+<h2 id="3">3. Смена группы</h2>
+<div class="mermaid">flowchart LR
+    dep_student("`**Обучающийся**
+    личное обращение`") 
+
+    dep_stof("`**Студенческий офис**
+    идентификация обучающегося, запрос на адрес ЭИОС с передачей необходимых данных`")
+
+    dep_it("`**ЭИОС**
+    привязка к новой группе, отправка уведомлений на личную электронную почту`")
+
+    dep_student2("`**Обучающийся**
+    работа в новой группе`")    
+
+    dep_student--&gt;dep_stof
+    dep_stof--&gt;dep_it
+    dep_it--&gt;dep_student2
+</div>
+<ol>
+<li>При смене учебной группы обучающемуся необходимо обратиться в <strong>студенческий офис</strong></li>
+<li><strong>Студенческий офис</strong> проводит идентификацию обучающегося и формирует письмо-запрос на адрес <tooltip term="lms">СУО</tooltip> ЭИОС (eios@mauniver.ru) о переводе обучающегося в другую учебную группу. При этом в письме обязательно указываются следующие данные: ФИО обучающегося, исходная группа и целевая группа.</li>
+<li>Подразделение университета, отвечающее за работу <tooltip term="lms">СУО</tooltip> ЭИОС меняет привязку обучающегося к академической группе и уведомляет его об этом с использованием почты, указанной у обучающегся в профиле ЭИОС.</li>
+</ol>
+</div>
+</div><footer>
+<div aria-label="Навигация по странице" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-left" href=".." title="Главная"><span class="icon icon-circle-arrow-left"></span> Назад</a>
+<a class="btn btn-neutral float-right" href="../teacher/" title="Преподавателю">Вперед <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+<p>Copyright © 2023 Oleg Lyash.</p>
+</div>
+
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="Версии" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span>
+<a class="fa fa-github" href="https://github.com/zoyter/eios-docs" style="color: #fcfcfc"> GitHub</a>
+</span>
+<span><a href=".." style="color: #fcfcfc">« Назад</a></span>
+<span><a href="../teacher/" style="color: #fcfcfc">Вперед »</a></span>
+</span>
+</div>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>var base_url = "..";</script>
+<script src="../js/theme_extra.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../search/main.js"></script>
+<script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

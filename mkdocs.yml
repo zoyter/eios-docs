@@ -1,19 +1,73 @@
+# [Обязательное] Название сайта
 site_name: Работа в ЭИОС
-plugins:
-    - search
-    - mermaid2
-nav:
-  - Оглавление: index.md
-  - Обучающемуся: student.md
-  - Преподавателю: teacher.md
-  - Специалисту по СВР: teacher-svr.md
-  - Специалисту студ.офиса: student3.md
-  - Куратору: teacher-curator.md
+
+# Базовый адрес сайта
+#site_url: https://www.mkdocs.org/
+
+# Описание сайта. Добавляется в meta в html-заголовке каждой страницы.
+site_description: Справочная информация для ЭИОС "МАУ"
+
+# Автор (или авторы) сайта. Добавляется в html-заголовок каждой страницы.
+site_author: Oleg Lyash, Asya Lyash
+
+copyright: Copyright &copy; 2023 Oleg Lyash.
+
+# Ссылка на репозиторий, в котором хранятся исходные материалы.
+repo_url: https://github.com/zoyter/eios-docs
 
 theme:
   name: readthedocs
   locale: ru
+#  highlightjs: true
+#  hljs_languages:
+#    - bash
+#    - python
 
-copyright: (c) Oleg Lyash
-site_author: Oleg Lyash
-site_description: Справочная информация для ЭИОС "МАУ"
+plugins:
+    - search
+    - mermaid2
+#    - with-pdf:
+#        cover: true
+#        cover_title: Набор инструкций по работе в СУО ЭИОС
+#        cover_subtitle: версия для PDF
+#        copyright: (C) Oleg Lyash
+#        toc_title: Оглавление
+#        toc_level: 3
+#        output_path: ./help.pdf
+
+nav:
+  - Главная: index.md
+  - Обучающемуся: student.md
+  - Преподавателю: teacher.md
+  - Специалисту по СВР: teacher-svr.md
+  - Специалисту студ.офиса: student_dep.md
+  - Куратору: teacher-curator.md
+
+extra_css:
+    - css/extra.css
+
+# Список подключённых расширений для препроцессора языка Markdown
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/
+markdown_extensions:
+#    - toc:
+#        permalink: 
+#    - admonition
+#    - attr_list
+#    - def_list
+#    - mdx_gh_links:
+#        user: mkdocs
+#        repo: mkdocs
+#    - pymdownx.arithmatex:
+#        generic: true
+#    - pymdownx.betterem
+#    - pymdownx.caret
+#    - pymdownx.mark
+#    - pymdownx.tilde
+#    - pymdownx.critic
+#    - pymdownx.details
+    - pymdownx.keys #++ctrl+alt+delete++
+#    - pymdownx.superfences:
+#        custom_fences:
+#          - name: mermaid
+#            class: mermaid
+#            format: !!python/name:pymdownx.superfences.fence_code_format
