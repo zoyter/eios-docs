@@ -1,0 +1,9 @@
+*.ckpt
+__pycache__/
+.vscode/
+*.pyc
+.uuid
+.venv
+.DS_Store
+/.venv
+/.venv

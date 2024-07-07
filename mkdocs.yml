@@ -1,0 +1,19 @@
+site_name: Работа в ЭИОС
+plugins:
+    - search
+    - mermaid2
+nav:
+  - Оглавление: index.md
+  - Обучающемуся: student.md
+  - Преподавателю: teacher.md
+  - Специалисту по СВР: teacher-svr.md
+  - Специалисту студ.офиса: student3.md
+  - Куратору: teacher-curator.md
+
+theme:
+  name: readthedocs
+  locale: ru
+
+copyright: (c) Oleg Lyash
+site_author: Oleg Lyash
+site_description: Справочная информация для ЭИОС "МАУ"
